@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>DAY HERE </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+</head>
+
+<body>
+    <script src="JS/script.js"></script>
+
+    
+			<div>
+				<img class="cart" id="cart" src="images/cart.png" width="55px" >
+				<span class="numeracao" id="numeracao">0</span>
+			</div>
+
+			<h1>olhe para o carrinho para saber seus status</h1>
+			<p>
+
+				<button onclick="qualquerProduto('escova', 2.5)">escova <h4>R$2,50</h4></button>
+				<button onclick="qualquerProduto('refri', 8)">refri <h4>R$8,00</h4></button>
+				<button onclick="qualquerProduto('cookie', 3.2)">cookie <h4>R$3,20</h4></button>
+				<button onclick="qualquerProduto('cookie caro',5.20)">cookie caro <h4>R$5,20</h4></button>
+			<h1 id="teste"></h1>
+
+			<form method="POST" onsubmit="finalizar()">
+				<fieldset>
+					<legend>Carrinho</legend>
+
+					<ul id="lista">
+
+					</ul>
+					<h4 id="linhaTotal">TOTAL: R$<a id="total" name="total">0</a></h4>
+				</fieldset>
+			</form>
+			<button onclick="LimpraLista()">Limpar Carrinho</button>
+			<button onclick="finalizar()">Finalizar Compra</button>
+    
+      
+</body>
+
+</html>

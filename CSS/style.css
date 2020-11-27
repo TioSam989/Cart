@@ -1,0 +1,10 @@
+li {
+    font-size: 20px;
+}
+.numeracao{
+    display:inlineblock;
+
+}
+.cart {
+    padding: .75em .875em .375em .375em;
+}
